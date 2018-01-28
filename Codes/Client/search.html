@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+
+<script type="text/javascript">
+
+
+function comboInit(thelist)
+{
+  theinput = document.getElementById(theinput);  
+  var idx = thelist.selectedIndex;
+  var content = thelist.options[idx].innerHTML;
+  if(theinput.value == "")
+    theinput.value = content;	
+}
+
+function combo(thelist, theinput)
+{
+  theinput = document.getElementById(theinput);  
+  var idx = thelist.selectedIndex;
+  var content = thelist.options[idx].innerHTML;
+  theinput.value = content;	
+}
+
+</script>
+
+<link href="format/IndexFormat.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+	<header>
+    
+    	<p>SEARCH </p>
+    
+    </header>
+    
+    <section>
+    
+    	<input type="text" id="theinput" name="theinput" />
+		<select name="thelist" onChange="combo(this, 'theinput')" onMouseOut=					"comboInit(this, 'theinput')" >
+  			<option>Food and Drinks</option>
+  			<option>Culture</option>
+ 			<option>Sport</option>
+		</select>
+    
+    	<ul>
+        
+        	<li>
+           		<a href=""  >FOOD AND DRINKS </a>         
+            </li>
+			
+            <li>
+           		<a href=""  >CULTURE </a>         
+            </li>
+            
+            <li>
+           		<a href=""  >TRAFIC </a>         
+            </li>
+            
+             <li>
+           		<a href=""  >SPORT </a>         
+            </li>
+            
+             <li>
+           		<a href=""  >SIGHTSEEING </a>         
+            </li>
+            
+        </ul>
+    
+    </section>
+    
+    <footer>
+        <div>
+           
+            <div class="leftButton">
+            	<button type="button" id="backButton" onclick="location.href='3DVirtualEyeDream.html'"> BACK       
+            	</button>
+            
+            </div>
+            
+             <div class="rightButton">
+            	<button type="button" id="searchPeople" onclick=""> SEARCH PEOPLE
+                
+                </button>
+            
+            </div>
+    	</div>
+    
+    </footer>
+    
+  
+
+
+</body>
